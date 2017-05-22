@@ -1,0 +1,439 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	margin: 0
+	padding: 0
+
+*::-webkit-input-placeholder
+	color: #adadad
+	opacity: 1
+	text-transform: uppercase
+
+*:-moz-placeholder
+	color: #adadad
+	opacity: 1
+	text-transform: uppercase
+*::-moz-placeholder
+	color: #adadad
+	opacity: 1
+	text-transform: uppercase
+
+*:-ms-input-placeholder
+	color: #adadad
+	opacity: 1
+	text-transform: uppercase
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #adadad
+body input:required:valid,
+body textarea:required:valid
+	color: #adadad
+
+html, body
+	font-size: 14px
+	height: 100%
+
+body
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+ul li
+	list-style: none
+
+a, button
+	&:focus
+		outline: none
+
+a
+	&:hover
+		text-decoration: none
+
+.fl
+	float: left
+.fr
+	float: right
+.btn-readmore, .btn-marker
+	background-color: #61b2bc
+	border-radius: 40px
+	color: #fff
+	display: block
+	text-align: center
+	text-transform: uppercase
+
+.btn-readmore
+	font-family: 'Raleway', sans-serif
+	font-weight: bold
+	height: 41px
+	line-height: 40px
+	width: 127px
+
+.btn-marker
+	border: 2px solid #fff
+	font-size: 0.9286rem
+	height: 27px
+	line-height: 26px
+	width: 83px
+
+	text-transform: uppercase
+/*Page Style*/
+#page
+	margin: 0 auto
+	max-width: 1400px
+	min-width: 1400px
+	overflow: hidden
+/*Header and Top-Section Style*/
+.top-section
+	&__slider
+		z-index: 3
+		.bxslider
+			li
+				text-align: center
+				img
+					display: inline-block
+
+		.bx-wrapper
+			border: 0
+			box-shadow: none
+			margin-bottom: 0
+.header
+	background-color: rgba(198, 200, 202, .7)
+	border-bottom: 1px solid #fff
+	margin-left: -700px
+	overflow: hidden
+	padding: 27px 0 26px
+	position: fixed
+	top: 0
+	left: 50%
+	width: 1400px
+	z-index: 5
+	&__logo
+		margin-right: 87px
+	&__navigation
+		ul
+			li
+				float: left
+				margin-left: 34px
+				&:first-child
+					margin-left: 0
+				a
+					color: #3c3c3c
+					font-size: 1.286rem
+					transition: all .4s ease
+					&:hover
+						text-decoration: underline
+.social-block
+	li
+		float: left
+		margin-left: 20px
+		a
+			color: #3c3c3c
+			font-size: 1.3rem
+			opacity: .8
+			transition: all .4s ease
+			&:hover
+				opacity: 1
+/*Main Style*/
+.main
+	padding-top: 61px
+/*Blog Style*/
+.blog
+	.inforamation-article
+		span
+			position: relative
+			text-transform: uppercase
+			&:first-child
+				&::before
+					content: '/'
+					position: absolute
+					top: -4px
+					right: -2px
+		.cat
+			padding-right: 14px
+		.date
+			padding-left: 12px
+	&__big-article
+		border-bottom: 1px solid #f3f3f3
+		margin-bottom: 53px
+		padding-bottom: 60px
+		position: relative
+		.blog__social-box
+			top: 0
+			right: 0
+	&__social-box
+		position: absolute
+		a
+			font-size: 1.26rem
+			.fa-square
+				opacity: .8
+				transition: all .4s ease
+			&:hover
+				.fa-square
+					opacity: 1
+		.facebook
+			.fa-square
+				color: #395995
+		.twitter
+			.fa-square
+				color: #21a4de
+		.dribble
+			.fa-square
+				color: #db92b0
+		.behance
+			.fa-square
+				color: #21a4de
+	&__wrapper-img
+		z-index: 1
+	&__content
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		z-index: 3
+		.marker
+			position: absolute
+			top: 20px
+			left: 17px
+		.text-box
+			color: #fff
+			padding-top: 34.3%
+			text-align: center
+			h3
+				font-size: 1.536rem
+				font-weight: normal
+				margin-top: 10px
+				text-transform: uppercase
+			.short-text
+				margin-top: 11px
+			.btn-readmore
+				background-color: rgba(255, 255, 255, .4)
+				margin: 50px auto 0
+				transition: all .4s ease
+				&:hover
+					background-color: rgba(255, 255, 255, .5)
+.first-section-article
+	padding: 0px 0 31px !important
+.section-article
+	border-bottom: 1px solid #f3f3f3
+	padding: 36px 0 44px
+	.box-article
+		.inforamation-article
+			span
+				font-size: 0.98rem
+			.cat
+				color: #61b2bc
+		h3
+			font-family: 'Raleway', sans-serif
+			font-size: 1.786rem
+			font-weight: bold
+			line-height: 2.2rem
+			margin-top: 10px
+			text-transform: uppercase
+		.blog__wrapper-img
+			margin-top: 30px
+			position: relative
+			img
+				display: block
+				z-index: 1
+			.blog__social-box
+				bottom: 0px
+				right: 0
+				ul
+					li
+						float: left
+		.prev-text
+			height: 90px
+			margin-top: 27px
+			overflow: hidden
+		.btn-readmore
+			margin-top: 11px
+
+.article-featured
+	.blog__big-article
+		border: 0
+		margin-bottom: 0
+		padding-bottom: 0
+.blog
+	.bx-wrapper
+		border-bottom: 1px solid red
+		border: 0
+		box-shadow: none
+		margin: 53px 0 0
+		.bx-pager
+			bottom: -50px
+		.bx-default-pager
+			a
+				background: #eaeaea
+				border-radius: 50%
+				height: 15px
+				width: 15px
+				&:hover
+					background: #61b2bc !important
+				&:focus
+					background: #61b2bc !important
+			.active
+				background: #61b2bc !important
+
+/*Sidebar Style*/
+.sidebar-block
+	padding: 0 10px
+.who-i-am
+	border: 1px solid #555555
+	padding: 30px 21px
+	text-align: center
+	h1
+		font-size: 1.429rem
+		font-weight: bold
+		color: #61b2bc
+		margin: 0
+		text-transform: uppercase
+	img
+		margin-top: 10px
+	p
+		color: #6a6a6a
+		margin-top: 15px
+	.social-block
+		margin-top: 25px
+		text-align: center
+		li
+			float: none
+			display: inline-block
+.sibebar-category
+	border: 1px solid #555555
+	margin-top: 40px
+	padding: 30px 0
+	text-align: center
+	h2
+		color: #61b2bc
+		font-size: 1.286rem
+	ul
+		margin-top: 21px
+		li
+			margin-top: 5px
+			&:first-child
+				margin-top: 0
+			a
+				color: #000
+				font-size: 1.286rem
+				text-transform: uppercase
+.mail-rss
+	border: 1px solid #555555
+	margin-top: 40px
+	padding: 25px 31px 42px
+	text-align: center
+	h2
+		color: #61b2bc
+		font-size: 1.17rem
+	p
+		color: #6a6a6a
+		margin-top: 7px
+	form
+		input
+			border: 0
+			border: 1px solid #f5f5f5
+			border-radius: 40px
+			display: block
+			height: 36px
+			line-height: 35px
+			margin-top: 30px
+			text-align: center
+			width: 100%
+		button
+			background-color: #61b2bc
+			border: none
+			border-radius: 40px
+			color: #fff
+			display: block
+			height: 36px
+			line-height: 35px
+			text-align: center
+			font-size: 1.17rem
+			font-weight: bold
+			margin-top: 20px
+			text-transform: uppercase
+			width: 100%
+
+.popular-posts
+	border: 1px solid #555555
+	margin-top: 40px
+	padding: 30px 31px 22px
+	h2
+		color: #61b2bc
+		font-size: 1.17rem
+		margin-bottom: 30px
+		text-align: center
+		text-transform: uppercase
+	ul
+		a
+			&:first-child
+				li
+					border-top: 0
+					padding-top: 0
+		li
+			border-top: 1px solid #f5f5f5
+			padding: 30px 0
+			.content
+				margin-left: 125px
+				p
+					color: #6a6a6a
+					font-size: 0.7857rem
+				h3
+					color: #000
+					font-family: 'Raleway', sans-serif
+					font-size: 0.9857rem
+					font-weight: bold
+.folow-instagramm
+	border: 1px solid #555555
+	margin-top: 40px
+	padding: 30px 31px 22px
+	h2
+		color: #61b2bc
+		font-size: 1.17rem
+		margin-bottom: 30px
+		text-align: center
+		text-transform: uppercase
+	ul
+		li
+			float: left
+			margin-bottom: 22px
+			&:nth-child(2n)
+				margin-left: 15px
+.tags
+	border: 1px solid #555555
+	margin-top: 45px
+	padding: 30px 31px 42px
+	text-align: center
+	h2
+		color: #61b2bc
+		font-size: 1.17rem
+		margin-bottom: 30px
+		text-align: center
+		text-transform: uppercase
+	a
+		background-color: #61b2bc
+		border-radius: 40px
+		font-size: 0.8571rem
+		display: inline-block
+		color: #fff
+		margin: 4px 0
+		padding: 4px 16px
+		text-transform: uppercase
+
+.footer
+	background-color: #f3f3f3
+	padding: 57px 0 63px
+	margin-top: 93px
+	&__logo
+		position: relative
+		left: -70px
+	.social-block
+		margin-left: 154px
+		li
+			margin-left: 26px
+@import "media" // Всегда в конце
